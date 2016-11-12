@@ -1,0 +1,466 @@
+body{
+overflow-x:hidden;
+background-size:100% 120%;
+
+}
+
+@font-face {
+    font-family: flame;
+    src: url(../fonts/Sanchez.otf);
+}
+
+.wrapper{
+
+min-height:100vh;
+position:relative;
+padding:0px;
+position:relative;
+}
+
+.start-page{
+background-image:url("../img/1.jpg");
+box-shadow: 0px -20px 35px #0C0910 inset;
+animation:fadein 3s;
+opacity:0;
+
+}
+
+
+.second-page{
+background-color: #202D4C;
+
+}
+
+
+
+.three-page{
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-color: #263f68;
+    background-image: url("../img/facebookrobotbg.png");
+    background-position-y: bottom;
+
+}
+
+.four-page{
+background-color: #263f68;
+background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+
+    background-image: url("../img/3dfb.png");
+}
+
+
+.five-page{
+background-color:#234377;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #253D66;
+    background-image: url("../img/googlebot.png");
+    background-position-y: bottom;
+}
+
+.six-page{
+background-color: #253D66;
+background-image: url("../img/googlebg2.png");
+background-size: 65%;
+background-attachment:fixed;
+box-shadow:0px 11px 20px black inset;
+}
+
+
+.seven-page{
+background-color:#0B2044;
+background-image: url("../img/mountainbg.png");
+background-position-y: bottom;
+background-repeat:no-repeat;
+}
+
+.eight-page{
+background-color:#0c1a24;
+}
+
+*{
+color:white;
+}
+
+
+.p-title{
+    font-family: flame;
+    font-size: 75px;
+    letter-spacing: 8px;
+    box-sizing: border-box;
+    animation: letter-spacing 3s 1;
+    animation-delay: 1s;
+    color: white;
+	text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.51);
+	
+}
+
+.p-large{
+    font-family: flame;
+    font-size: 35px;
+    box-sizing: border-box;
+    animation-delay: 1s;
+    color: white;
+	font-weight: bold;
+	letter-spacing:4px;
+	text-shadow: 3px 3px 6px black;
+}
+
+
+.p-medium{
+	font-family: flame;
+	font-family: Segoe UI;
+    line-height: 70%;
+    font-size: 40px;
+	font-weight:bold;
+	text-shadow: 3px 3px 6px black;
+
+
+}
+
+.p-small{
+	font-family: Segoe UI Light;
+	text-shadow:0px 0px 5px black;
+    margin-top: 40px;
+    font-size: 21px;
+    line-height: 220%;
+	text-shadow: 3px 3px 5px black,3px 3px 5px black;
+}
+
+@keyframes letter-spacing{
+0% (letter-spacing:8px);
+100% (letter-spacing:12px);
+}
+
+
+.button-down {
+position: absolute; 
+bottom:-35px; 
+width:70px;
+height:70px;
+background:black;
+margin:auto;
+left:0px;
+right:0px;
+border-radius:50%;
+}
+
+.city{
+    background-position: center;
+    padding: 0px;
+    bottom: 0px;
+    background-image: url(../img/city.png);
+    width: 300vw;
+    height: 240px;
+    position: absolute;
+    background-size: contain;
+}
+
+hr{
+    border-bottom: 1px solid #2C3346;
+    border-top: 1px solid black;
+	width:0%;
+}
+
+.googlebot{
+    padding: 0px;
+    bottom: 0px;
+    background-image: url(../img/googlebot.png);
+    width: 80vw;
+    height: 100vh;
+    position: absolute;
+    background-size: contain;
+	background-repeat:no-repeat;
+}
+
+
+.facebookbot{
+    padding: 0px;
+    bottom: 0px;
+    background-image: url(../img/facebookrobot.png);
+    width: 25vw;
+    height: 50vh;
+    position: absolute;
+	background-position:center;
+    background-size: contain;
+	background-repeat:no-repeat;
+	margin:auto;
+	left:0px;
+	right:0px;
+}
+
+
+
+.p-second{
+font-family:Segoe UI;
+font-size:45px;
+text-shadow:0px 0px 2px white;
+z-index:999!IMPORTANT;
+    position: relative;
+}
+
+.shader{
+
+
+}
+
+
+.p-three{
+font-family:Segoe UI Light;
+text-shadow:0px 0px 3px white;
+
+}
+
+
+.layer-3{
+    height: 600px;
+    position: absolute;
+    margin: auto;
+    left: -7vw;
+    right: 0px;
+    width: 400px;
+}
+
+
+.animation-3-1{
+animation:zoom 5s infinite;
+animation-delay:1s;
+}
+.animation-3-2{
+animation:zoom 5s infinite;
+animation-delay:2s;
+
+}
+.animation-3-3{
+animation:zoom 5s infinite;
+animation-delay:3s;
+}
+.animation-3-4{
+animation:zoom 5s infinite;
+animation-delay:4s;
+}
+.animation-3-5{
+animation:zoom 5s infinite;
+animation-delay:5s;
+}
+
+
+@keyframes zoom {
+0%{}
+6%{transform:scale(1.2)}
+12%{transform:scale(0.9)rotate(5deg);}
+13%{transform:rotate(-5deg);}
+14%{transform:rotate(2deg);}
+15%{transform:rotate(-2deg);}
+16%{transform:rotate(0deg);}
+28%{transform:scale(1)}
+
+}
+
+.layer-3{
+animation:layer-3 1s 1;
+
+}
+
+@keyframes layer-3 {
+0%{transform:rotate(360deg)}
+
+
+}
+
+
+.google-bar{
+width:576px;
+height:40px;
+background-image: url(../img/googlebar.jpg);
+margin:0 auto;
+margin-top:30px;
+background-repeat:no-repeat;
+
+}
+
+.google-bar > .text-area{
+    padding-top: 8px;
+    float: left;
+    color: black;
+    font-size: 16px;
+    padding-left: 5px;
+}
+
+.google-bar > span {
+    font-size: 22px;
+    color: black;
+    float: left;
+}
+
+.circle-google{
+    font-family: Segoe UI Light;
+    padding-top: 60px;
+    width: 200px;
+    height: 200px;
+    background: #d62d20;
+    border-radius: 100%;
+    font-size: 18px;
+    text-shadow: 0px 0px 3px white;
+}
+
+
+.circle-fb{
+font-size: 13px;
+font-family:Segoe UI Light;
+margin-top: -70px;
+    padding-top: 40px;
+    width: 135px;
+    height: 135px;
+    background:#0057e7;
+    border-radius: 100%;
+    margin-left: 100px;
+}
+.cr{
+animation:circles 4s infinite;
+box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.37);
+}
+
+.quote{
+animation:quote 4s infinite;
+}
+
+@keyframes quote {
+50%{color:#F3D600;text-shadow:0px 0px 5px #F3D600;}
+
+
+}
+
+
+
+.bg-7{
+position:absolute;
+top:0px;
+z-index:1;
+width:100vw;
+height:200px;
+background-image: url("../img/sevenbgtop.png");
+background-position-y: bottom;
+background-repeat-x:repeat;background-size:contain;
+}
+
+.bg-8{
+position:absolute;
+top:0px;
+z-index:1;
+width:500vw;
+height:200px;
+background-size:contain;
+background-image: url("../img/mountainbgtop.png");
+background-position-y: bottom;
+background-repeat-x:repeat;
+animation:leftright 250s infinite;
+
+}
+
+.bg-8-bottom{
+position:absolute;
+bottom:0px;
+z-index:1;
+width:500vw;
+height:200px;
+background-image: url("../img/citylast.png");
+background-position-y: bottom;
+background-repeat:repeat;
+background-size:contain;
+animation:leftright 312s infinite;
+}
+
+
+.end{
+    text-shadow: 0px 0px 4px #FFFFFF;
+    color: #E2E2E2;
+    font-family: Segoe UI Light;
+}
+
+
+
+.last-button{
+text-shadow: 0px 0px 3px white;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    box-shadow: 0px 0px 15px black;
+    border-radius: 100%;
+    position: absolute;
+}
+
+
+
+@keyframes last-btn {
+50%{color:#F3D600;text-shadow:0px 0px 5px #F3D600;}
+
+}
+
+@keyframes circles {
+20%{transform:scale(1.1);}
+
+
+
+}
+
+
+@keyframes leftright {
+50%{background-position:10000px;}
+
+}
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+.menu{
+    color: #EFEFEF;
+    font-family: Segoe UI Light;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 5px black;
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    z-index: 999;
+    padding-top: 12px;
+    padding-left: 0px;
+    text-shadow: 0px 0px 4px white;
+	transition:1s ease;
+}
+
+.menu a, .menu a:link, .menu a:visited{
+color: #EFEFEF;
+text-decoration:none;
+}
+
+.menu:hover{
+	transform:rotate(360deg);
+	background-color: rgb(93, 93, 93);
+    box-shadow: 0px 0px 7px #929292;
+}
